@@ -1,15 +1,15 @@
-# module "s3-statefile"{
-#   source ="./s3-bucket-m"
-# }
+ module "s3-statefile"{
+   source ="./s3-bucket-m"
+ }
 
 
-# terraform {
-#   backend "s3" {
-#     bucket = "david-statefile-buc"
-#     key    = "my-terraform-project-statefile.tf"
-#     region = "us-east-1"
-#   }
-# }
+ terraform {
+   backend "s3" {
+     bucket = "david-statefile-buc"
+     key    = "my-terraform-project-statefile.tf"
+     region = "us-east-1"
+   }
+}
 
 
 # VPC Configuration
